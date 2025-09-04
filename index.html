@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🚫 NoCasinoGPT</title>
-  <meta name="description" content="NoCasinoGPT – ett digitalt stöd för dig som vill stå emot spelande. Fungerar bäst på svenska och engelska." />
+  <meta name="description" content="NoCasinoGPT – ett digitalt stöd för att stå emot spelande. Fungerar bäst på svenska och engelska." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
   <style>
     :root { color-scheme: light dark; }
     body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
-    .hidden { display: none; }
   </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
@@ -24,7 +23,7 @@
         <div class="h-9 w-9 rounded-2xl bg-red-600"></div>
         <span class="font-semibold tracking-tight">NoCasinoGPT</span>
       </div>
-      <div>
+      <div class="flex gap-2">
         <button id="lang-sv" class="text-sm font-medium px-3 py-1 rounded-lg bg-neutral-200 dark:bg-neutral-800">Svenska</button>
         <button id="lang-en" class="text-sm font-medium px-3 py-1 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-800">English</button>
       </div>
@@ -36,70 +35,88 @@
     <!-- Hero -->
     <section class="text-center">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">🚫 NoCasinoGPT</h1>
-      <p id="intro-sv" class="mt-4 text-neutral-600 dark:text-neutral-400">
-        Ett stöd när du inte vet vem du ska prata med.<br>
-        Denna GPT-chatt är skapad för att hjälpa dig att inte spela – kortsiktigt och långsiktigt.<br>
-        <strong>Det är inte en läkare eller psykolog.</strong><br>
-        Vid akut läge, ring <strong>112</strong> eller kontakta <strong>Stödlinjen 020-81 91 00</strong>.
-      </p>
-      <p id="intro-en" class="hidden mt-4 text-neutral-600 dark:text-neutral-400">
-        Support when you don’t know who to talk to.<br>
-        This GPT chat is created to help you avoid gambling – both short-term and long-term.<br>
-        <strong>It is not a doctor or psychologist.</strong><br>
-        In an emergency, call <strong>112</strong> (EU) or your local emergency number, or reach out to <strong>Stödlinjen +46 20-81 91 00</strong>.
-      </p>
 
-      <p id="lang-note-sv" class="mt-4 text-sm text-neutral-500">Chatten fungerar på flera språk, men bäst på svenska och engelska.</p>
-      <p id="lang-note-en" class="hidden mt-4 text-sm text-neutral-500">The chat works in multiple languages, but is best in Swedish and English.</p>
+      <!-- Intro SV -->
+      <div id="intro-sv" class="mt-4 text-neutral-600 dark:text-neutral-400">
+        <p>Ett stöd när du inte vet vem du ska prata med.</p>
+        <p class="mt-2">Denna GPT-chatt är skapad för att hjälpa dig att inte spela – kortsiktigt och långsiktigt.</p>
+        <p class="mt-2"><strong>Det är inte en läkare eller psykolog.</strong></p>
+        <p class="mt-2">Vid akut läge, ring <strong>112</strong> eller kontakta <strong>Stödlinjen 020-81 91 00</strong>.</p>
+        <p class="mt-3 text-sm text-neutral-500">Chatten fungerar på flera språk, men bäst på svenska och engelska.</p>
+      </div>
 
+      <!-- Intro EN -->
+      <div id="intro-en" class="hidden mt-4 text-neutral-600 dark:text-neutral-400">
+        <p>Support when you don’t know who to talk to.</p>
+        <p class="mt-2">This GPT chat is created to help you avoid gambling – both short- and long-term.</p>
+        <p class="mt-2"><strong>It is not a doctor or psychologist.</strong></p>
+        <p class="mt-2">If you’re in immediate danger, call your <strong>local emergency number</strong>. For crisis hotlines worldwide, visit <a class="underline" href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</p>
+        <p class="mt-3 text-sm text-neutral-500">The chat works in multiple languages, but is best in Swedish and English.</p>
+      </div>
+
+      <!-- Buttons -->
       <div class="mt-6 flex items-center justify-center gap-3">
-        <a
-          href="https://chatgpt.com/g/g-68b97188911481918263e2ecc8a24701-nocasinogpt"
-          target="_blank" rel="noopener"
-          class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-red-600 text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2">
+        <a id="btn-open-sv"
+           href="https://chatgpt.com/g/g-68b97188911481918263e2ecc8a24701-nocasinogpt"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-red-600 text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2">
           Öppna NoCasinoGPT →
         </a>
-        <a href="#trygg"
+        <a id="btn-open-en"
+           href="https://chatgpt.com/g/g-68b97188911481918263e2ecc8a24701-nocasinogpt"
+           target="_blank" rel="noopener"
+           class="hidden inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-red-600 text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2">
+          Open NoCasinoGPT →
+        </a>
+
+        <a id="btn-info-sv" href="#trygg"
            class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800">
           Läs viktig info
         </a>
+        <a id="btn-info-en" href="#trygg"
+           class="hidden inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+          Read important info
+        </a>
       </div>
 
-      <!-- Embedded chat -->
-      <div class="mt-8">
-        <div id="nocasinogpt" class="w-full h-[80vh] rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60"></div>
-        <script src="https://chatgpt.com/embed.js"
-                data-gpt="g-68b97188911481918263e2ecc8a24701-nocasinogpt"
-                data-container="nocasinogpt"
-                data-fullscreen="true"></script>
-        <p id="embedFallback" class="hidden mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-          Chatten kunde inte laddas. <a class="underline" href="https://chatgpt.com/g/g-68b97188911481918263e2ecc8a24701-nocasinogpt" target="_blank" rel="noopener">Öppna NoCasinoGPT här</a>.
-        </p>
-      </div>
+      <p class="mt-3 text-xs text-neutral-500">Tillgänglig via direktlänk. Ingen reklam, inga spelrelaterade länkar.</p>
     </section>
 
-    <!-- Disclaimer -->
+    <!-- Disclaimer / Viktig info -->
     <section id="trygg" class="mt-14 rounded-3xl border border-red-200/60 dark:border-red-800/60 bg-red-50/60 dark:bg-red-900/20 p-6">
-      <h2 class="text-lg font-semibold">⚠️ Viktig info / Important info</h2>
-      <ul class="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-        <li>NoCasinoGPT är ett stödverktyg – inte medicinsk rådgivning.</li>
+      <h2 id="trygg-title-sv" class="text-lg font-semibold">⚠️ Viktig info</h2>
+      <h2 id="trygg-title-en" class="hidden text-lg font-semibold">⚠️ Important info</h2>
+
+      <!-- List SV -->
+      <ul id="trygg-list-sv" class="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+        <li>NoCasinoGPT är ett stödverktyg – inte medicinsk rådgivning eller behandling.</li>
         <li>Har du problem med spel: <a class="underline hover:no-underline" href="https://www.stodlinjen.se" target="_blank" rel="noopener">Stödlinjen</a> – telefon <strong>020-81 91 00</strong>.</li>
         <li>Vid akuta lägen: ring <strong>112</strong>.</li>
         <li>Mer info: <a class="underline hover:no-underline" href="https://www.1177.se/liv--halsa/beroenden/spelberoende/" target="_blank" rel="noopener">1177 Vårdguiden</a>.</li>
-        <li>International: <a class="underline hover:no-underline" href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</li>
+        <li>Internationellt: <a class="underline hover:no-underline" href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</li>
+      </ul>
+
+      <!-- List EN -->
+      <ul id="trygg-list-en" class="hidden mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+        <li>NoCasinoGPT is a support tool – not medical advice or therapy.</li>
+        <li>If gambling is a problem, consider professional help or peer support services in your country.</li>
+        <li>If you’re in immediate danger, call your <strong>local emergency number</strong>. Global crisis hotlines: <a class="underline hover:no-underline" href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</li>
+        <li>Health information (Sweden): <a class="underline hover:no-underline" href="https://www.1177.se/liv--halsa/beroenden/spelberoende/" target="_blank" rel="noopener">1177.se</a>.</li>
       </ul>
     </section>
 
     <!-- About -->
     <section id="about" class="mt-12">
-      <h2 class="text-lg font-semibold">ℹ️ Om sidan / About this site</h2>
+      <h2 id="about-title-sv" class="text-lg font-semibold">ℹ️ Om sidan</h2>
+      <h2 id="about-title-en" class="hidden text-lg font-semibold">ℹ️ About this site</h2>
+
       <p id="about-sv" class="mt-3 text-sm text-neutral-700 dark:text-neutral-300">
-        Denna sida är fristående och helt ideell. Syftet är att ge stöd för att stå emot spelande. 
+        Denna sida är fristående och ideell. Syftet är att ge stöd för att stå emot spelande.
         Inga kommersiella intressen, inga dolda länkar, ingen reklam.
       </p>
       <p id="about-en" class="hidden mt-3 text-sm text-neutral-700 dark:text-neutral-300">
-        This page is independent and non-commercial. Its only purpose is to provide support for avoiding gambling. 
-        No hidden links, no ads.
+        This page is independent and non-commercial. Its only purpose is to support people who want to avoid gambling.
+        No commercial interests, no hidden links, no ads.
       </p>
     </section>
 
@@ -113,33 +130,41 @@
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Fallback if embed fails
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        if (!document.querySelector('#nocasinogpt iframe')) {
-          document.getElementById('embedFallback').classList.remove('hidden');
-        }
-      }, 3000);
-    });
-
     // Language toggle
     const svBtn = document.getElementById('lang-sv');
     const enBtn = document.getElementById('lang-en');
 
-    function setLang(lang) {
-      const svElems = ['intro-sv','lang-note-sv','about-sv'];
-      const enElems = ['intro-en','lang-note-en','about-en'];
+    const svElems = [
+      'intro-sv','btn-open-sv','btn-info-sv',
+      'trygg-title-sv','trygg-list-sv',
+      'about-title-sv','about-sv'
+    ];
+    const enElems = [
+      'intro-en','btn-open-en','btn-info-en',
+      'trygg-title-en','trygg-list-en',
+      'about-title-en','about-en'
+    ];
 
+    function show(ids, show=true) {
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (show) el.classList.remove('hidden');
+        else el.classList.add('hidden');
+      });
+    }
+
+    function setLang(lang) {
       if (lang === 'sv') {
-        svElems.forEach(id => document.getElementById(id).classList.remove('hidden'));
-        enElems.forEach(id => document.getElementById(id).classList.add('hidden'));
+        show(svElems, true); show(enElems, false);
         svBtn.classList.add('bg-neutral-200','dark:bg-neutral-800');
         enBtn.classList.remove('bg-neutral-200','dark:bg-neutral-800');
+        document.documentElement.lang = 'sv';
       } else {
-        enElems.forEach(id => document.getElementById(id).classList.remove('hidden'));
-        svElems.forEach(id => document.getElementById(id).classList.add('hidden'));
+        show(svElems, false); show(enElems, true);
         enBtn.classList.add('bg-neutral-200','dark:bg-neutral-800');
         svBtn.classList.remove('bg-neutral-200','dark:bg-neutral-800');
+        document.documentElement.lang = 'en';
       }
     }
 
@@ -148,4 +173,3 @@
   </script>
 </body>
 </html>
-
