@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🚫 NoCasinoGPT – Rakt stöd mot onlinecasinon</title>
+  <meta name="description" content="NoCasinoGPT stoppar spelimpulser i stunden med raka fakta, reset-verktyg och stödvägar. Inte terapi, inte reklam. Bara ärlighet, verktyg och hjälp när du behöver det mest." />
+  <meta name="robots" content="noindex, noarchive" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .check:before { content: "✓"; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
+  <header class="border-b border-neutral-200/60 dark:border-neutral-800/60">
+    <div class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-2xl bg-red-600/90 shadow-sm"></div>
+        <span class="font-semibold tracking-tight">NoCasinoGPT</span>
+      </div>
+      <nav class="text-sm text-neutral-500">
+        <a href="#om" class="hover:text-neutral-900 dark:hover:text-neutral-50">Om</a>
+        <a href="#hur" class="ml-4 hover:text-neutral-900 dark:hover:text-neutral-50">Hur funkar det?</a>
+        <a href="#resurser" class="ml-4 hover:text-neutral-900 dark:hover:text-neutral-50">Resurser</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <!-- Hero -->
+    <section class="text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
+        🚫 Rakt stöd mot onlinecasinon
+      </h1>
+      <p class="mt-4 text-neutral-600 dark:text-neutral-400">
+        Ett digitalt stödverktyg som stoppar spelimpulser i stunden med <strong>fakta, verktyg och stödvägar</strong>. 
+        Inte terapi, inte reklam – bara ärlighet och hjälp när du behöver det mest.
+      </p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <a id="ctaLink" href="#" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-red-600 text-white hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2">
+          Öppna NoCasinoGPT →
+        </a>
+        <a href="#trygg" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+          Läs viktig info
+        </a>
+      </div>
+      <p class="mt-3 text-xs text-neutral-500">Tillgänglig endast via direktlänk. Ingen reklam, inga casinotips.</p>
+    </section>
+
+    <!-- Om NoCasinoGPT -->
+    <section id="om" class="mt-14">
+      <h2 class="text-lg font-semibold">ℹ️ Om NoCasinoGPT</h2>
+      <p class="mt-3 text-sm text-neutral-700 dark:text-neutral-300">
+        NoCasinoGPT är designad för att stoppa spelimpulser online i stunden genom raka fakta, snabba reset‑verktyg och tydliga stödvägar. Den bygger på principer från beroendepsykologi, harm reduction och folkhälsa – men är inte terapi eller medicinsk rådgivning.
+      </p>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><strong>Urges:</strong> Avbryts med verklighetscheckar om house edge, odds och varför “vinster” är en fälla.</li>
+        <li><strong>Relapse:</strong> Mötas med reset‑steg, inte skuld. Ett snedsteg raderar inte framsteg.</li>
+        <li><strong>Crisis:</strong> Direkt grounding + journummer dygnet runt.</li>
+        <li><strong>Curiosity:</strong> Fakta om hur spel fungerar – utan glamorisering, utan falskt hopp.</li>
+        <li><strong>Exit:</strong> Uppmuntrar att lämna situationen för friskare aktiviteter, utan att dra ut samtalet.</li>
+      </ul>
+    </section>
+
+    <!-- Trygghet / Disclaimer -->
+    <section id="trygg" class="mt-14 rounded-3xl border border-red-200/60 dark:border-red-800/60 bg-red-50/60 dark:bg-red-900/20 p-6">
+      <h2 class="text-lg font-semibold">⚠️ Viktigt innan du börjar</h2>
+      <ul class="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+        <li class="flex gap-3"><span class="check text-red-700 dark:text-red-400 mt-0.5"></span><span>NoCasinoGPT är <strong>inte</strong> professionell behandling. Det är ett stödverktyg.</span></li>
+        <li class="flex gap-3"><span class="check text-red-700 dark:text-red-400 mt-0.5"></span><span>Vid spelproblem: kontakta <a class="underline hover:no-underline" href="https://www.stodlinjen.se" target="_blank" rel="noopener">Stödlinjen</a> – telefon <strong>020‑81 91 00</strong>.</span></li>
+        <li class="flex gap-3"><span class="check text-red-700 dark:text-red-400 mt-0.5"></span><span>Vid akuta lägen: ring <strong>112</strong>.</span></li>
+        <li class="flex gap-3"><span class="check text-red-700 dark:text-red-400 mt-0.5"></span><span>Internationellt: se <a href="https://findahelpline.com" class="underline hover:no-underline" target="_blank" rel="noopener">findahelpline.com</a>.</span></li>
+      </ul>
+    </section>
+
+    <!-- Referenser -->
+    <section class="mt-14">
+      <h2 class="text-lg font-semibold">📚 Referenser & grunder</h2>
+      <ul class="mt-3 list-disc list-inside text-sm text-neutral-700 dark:text-neutral-300 space-y-1">
+        <li>Kognitiv beteendeterapi (CBT) för spelberoende – National Council on Problem Gambling; American Psychiatric Association.</li>
+        <li>Motivational Interviewing för beteendeförändring (Miller & Rollnick, 2013).</li>
+        <li>Folkhälsa & harm reduction – WHO:s riktlinjer om spelrelaterade skador (2022).</li>
+        <li>Sannolikhetslära & spelmatematik – house edge, förväntat värde, slump.</li>
+        <li>Stödnätverk som Gamblers Anonymous & SMART Recovery – fokus på gemenskap och återfallsprevention.</li>
+      </ul>
+    </section>
+
+    <!-- Hur funkar det -->
+    <section id="hur" class="mt-14">
+      <h2 class="text-lg font-semibold">Hur funkar det?</h2>
+      <div class="mt-3 grid gap-3">
+        <div class="rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60 p-4">
+          <p class="text-sm"><strong>1. Bryt impulsen.</strong> GPT:n svarar rakt: påminner om oddsen, systemet och varför casinot alltid vinner.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60 p-4">
+          <p class="text-sm"><strong>2. Reset‑steg.</strong> Kort plan för att komma ur suget: alternativ aktivitet, andning, kontakta någon.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60 p-4">
+          <p class="text-sm"><strong>3. Utan stigma.</strong> Tonen är rak men varm – inget skuldbeläggande, bara nästa bästa steg.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resurser -->
+    <section id="resurser" class="mt-14">
+      <h2 class="text-lg font-semibold">Hjälp & resurser</h2>
+      <ul class="mt-3 list-disc list-inside text-sm text-neutral-700 dark:text-neutral-300 space-y-1">
+        <li><a href="https://www.stodlinjen.se" class="underline hover:no-underline" target="_blank" rel="noopener">Stödlinjen – stodlinjen.se</a> (020‑81 91 00)</li>
+        <li><a href="https://www.1177.se/liv--halsa/beroenden/spelberoende/" class="underline hover:no-underline" target="_blank" rel="noopener">1177 Vårdguiden om spelberoende</a></li>
+        <li><a href="https://findahelpline.com" class="underline hover:no-underline" target="_blank" rel="noopener">Internationella journummer – findahelpline.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-16 pt-8 border-t border-neutral-200/60 dark:border-neutral-800/60 text-xs text-neutral-500">
+      <p>© <span id="year"></span> NoCasinoGPT. Inga spelrelaterade länkar eller reklam.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const GPT_LINK = 'https://chat.openai.com/g/gpt-your-nocasinogpt-link';
+    const cta = document.getElementById('ctaLink');
+    if (GPT_LINK && GPT_LINK.includes('http')) cta.href = https://chatgpt.com/g/g-68b97188911481918263e2ecc8a24701-nocasinogpt
+;
+  </script>
+</body>
+</html>
